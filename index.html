@@ -18,7 +18,7 @@
   </head>
   <body>
 
-    <div id="app" class="">
+    <div id="app" class="centratura">
 
       <!-- Logo -->
       <div class="logo">
@@ -26,16 +26,20 @@
       </div>
 
       <!-- New todo -->
-      <div class="">
-        <input type="text" name="" value="">
-        <button type="button" name="button"></button>
+      <div class="new-todo">
+        <input v-model="newTodo" type="text" placeholder="Nuovo todo">
+        <button @click="addTodo" class="fas fa-times" type="button" name="button">Aggiungi</button>
       </div>
 
       <!-- La lista -->
-      <div class="">
-        <ul>
-          <li></li>
+      <div class="container">
+        <ul v-if="todoList.length > 0">
+          <li v-for="(elem,index) in todoList">
+            <span>{{elem}}</span>
+            <span><i @click="deleteTodo(index)" class="fas fa-times"></span></i>
+          </li>
         </ul>
+        <h2 v-else>Hai finito tutti compiti per oggi :)</h2>
       </div>
 
     </div>

@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.centratura{
+  margin: 0 30%;
+  text-align: center;
+}
+
+.logo img{
+  display: flex;
+  margin: 50px 0 0 10px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.new-todo{
+  margin-top: 30px;
+}
+
+.new-todo input{
+  font-size: 16px;
+  width: 400px;
+  padding: 12px 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.new-todo button{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+  margin: 5% 12%;
+  background-color: rgba(205, 205, 205, 0.20);
+  border-radius: 10px;
+}
+
+.container ul{
+  padding: 30px 40px;
+  list-style-type:none;
+}
+
+.container ul li{
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  width: 500px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(186, 186, 186, 0.5);
+}
+
+.container h2{
+  padding: 10px;
+
+}
